@@ -6,6 +6,7 @@ import {
 import Books from "./Pages/Books";
 import Update from "./Pages/Update";
 import Add from "./Pages/Add";
+import "./style.css";
 
 
 function App() {

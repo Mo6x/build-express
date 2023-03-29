@@ -16,7 +16,7 @@ const Add = () => {
     setBook((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const habdleClick = async e => {
+  const handleClick = async e => {
     e.preventDefault();
     try{
         await axios.post("http://localhost:4000/books", book);
@@ -33,7 +33,7 @@ const Add = () => {
         <input type="text" placeholder="desc" onChange={handleChange} name="desc" />
         <input type="number" placeholder="price" onChange={handleChange} name="price" />
         <input type="text" placeholder="cover" onChange={handleChange} name="cover" />
-        <button onClick= {handleChange}>Add</button>
+        <button className="formButton" onClick={handleClick}>Add</button>
     </div>
   );
 };
